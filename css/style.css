@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: flex;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Poppins Medium', sans-serif;
+    background-color: #FFF;
+    color: rgba(158, 154, 168, 1);
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.link-btn-hovered:hover {
+    background: #9AE3E3;
+}
+
+.header {
+    padding-top: 52px;
+    background-color: #fff;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: block;
+    margin-right: 45px;
+}
+
+.sitenav {
+    display: flex;
+    margin-right: auto;
+}
+
+.sitenav-item:not(:last-child) {
+    margin-right: 32px;
+}
+
+.sitenav-link:hover {
+    color: #34313D;
+}
+
+.sitenav-link,
+.register {
+    font-family: 'Poppins Bold', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: #9E9AA8;
+    font-weight: 700;
+}
+
+.login {
+    margin-right: 37px;
+    color: #9E9AA8;
+}
+
+.signup {
+    padding: 8px 24px;
+    background: #2BD0D0;
+    border-radius: 28px;
+    color: white;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sitenav-item:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    .login {
+        margin-right: 16px;
+        color: #9E9AA8;
+    }
+}
+
+@media (max-width: 630px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sitenav {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .header-container {
+        flex-direction: row;
+        gap: 0px;
+    }
+
+    .logo-link {
+        margin-right: auto;
+    }
+
+    .sitenav,
+    .register {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
